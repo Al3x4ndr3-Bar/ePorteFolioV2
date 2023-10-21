@@ -1,0 +1,44 @@
+/* Styles globaux */
+
+/* Définition de la police pour tout le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Logo */
+#logo {
+    position: absolute; /* Positionnement absolu par rapport à son parent positionné */
+    top: 10px; /* Décalage de 10px depuis le haut */
+    left: 10px; /* Décalage de 10px depuis la gauche */
+    width: 150px; /* Largeur du logo */
+  }
+
+  /* Header */
+  
+  /* Styles pour l'élément "header" */
+  header {
+    background-color: #f4f4f4; /* Couleur de fond */
+    color: black; /* Couleur du texte */
+    text-align: center; /* Alignement du texte au centre */
+    padding: 1em; /* Espacement intérieur */
+  }
+
+  /* Sections */
+  
+  /* Styles pour chaque section */
+  section {
+    margin: 20px; /* Espacement extérieur */
+    padding: 20px; /* Espacement intérieur */
+    border: 1px solid #dddddd; /* Bordure d'1px, de couleur gris clair */
+  }
+  
+  /* Footer */
+  
+  /* Styles pour le pied de page "footer" */
+  footer {
+    background-color: #f4f4f4; /* Couleur de fond */
+    color: black; /* Couleur du texte */
+    text-align: center; /* Alignement du texte au centre */
+    padding: 1em; /* Espacement intérieur */
+  }
+  
