@@ -8,16 +8,16 @@ body {
   /* Logo */
 #logo {
     position: absolute; /* Positionnement absolu par rapport à son parent positionné */
-    top: 10px; /* Décalage de 10px depuis le haut */
-    left: 10px; /* Décalage de 10px depuis la gauche */
-    width: 150px; /* Largeur du logo */
+    top: 15px; /* Décalage de 10px depuis le haut */
+    left: 30px; /* Décalage de 10px depuis la gauche */
+    width: 260px; /* Largeur du logo */
   }
 
   /* Header */
   
   /* Styles pour l'élément "header" */
   header {
-    background-color: #f4f4f4; /* Couleur de fond */
+    background-color: #cf06061f; /* Couleur de fond */
     color: black; /* Couleur du texte */
     text-align: center; /* Alignement du texte au centre */
     padding: 1em; /* Espacement intérieur */
