@@ -8,16 +8,16 @@ body {
   /* Logo */
 #logo {
     position: absolute; /* Positionnement absolu par rapport à son parent positionné */
-    top: 15px; /* Décalage de 10px depuis le haut */
-    left: 30px; /* Décalage de 10px depuis la gauche */
-    width: 260px; /* Largeur du logo */
+    top: 10px; /* Décalage de 10px depuis le haut */
+    left: 350px; /* Décalage de 10px depuis la gauche */
+    width: 240px; /* Largeur du logo */
   }
 
   /* Header */
   
   /* Styles pour l'élément "header" */
   header {
-    background-color: #cf06061f; /* Couleur de fond */
+    background-color: #ffffff; /* Couleur de fond */
     color: black; /* Couleur du texte */
     text-align: center; /* Alignement du texte au centre */
     padding: 1em; /* Espacement intérieur */
@@ -29,16 +29,39 @@ body {
   section {
     margin: 20px; /* Espacement extérieur */
     padding: 20px; /* Espacement intérieur */
-    border: 1px solid #dddddd; /* Bordure d'1px, de couleur gris clair */
+    border: 1px solid #ffffff; /* Bordure d'1px, de couleur gris clair */
   }
   
   /* Footer */
   
   /* Styles pour le pied de page "footer" */
   footer {
-    background-color: #f4f4f4; /* Couleur de fond */
+    background-color: #ffffff; /* Couleur de fond */
     color: black; /* Couleur du texte */
     text-align: center; /* Alignement du texte au centre */
     padding: 1em; /* Espacement intérieur */
   }
   
+  .skill {
+    margin: 20px 0;
+}
+
+/*.skill p {
+    font-weight: bold;
+}*/
+
+.barDeProgression {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+
+.progression {
+    height: 10px;
+    background-color: #8400ff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+}
