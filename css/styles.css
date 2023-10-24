@@ -1,73 +1,77 @@
-/* Styles globaux */
-
-/* Définition de la police pour tout le corps de la page */
-body {
-    font-family: Arial, sans-serif;
-
-  }
-  #container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  #logo {
-    margin-bottom: 20px;
-  }
-
-  h1 {
-    margin-top: 0px;
-  }
-
-  /* Header */  
-  /* Styles pour l'élément "header" */
-  header {
-    background-color: #ffffff; /* Couleur de fond */
-    color: black; /* Couleur du texte */
-    text-align: center; /* Alignement du texte au centre */
-    padding: 1em; /* Espacement intérieur */
-  }
-
-  /* Sections */
-  
-  /* Styles pour chaque section */
-  section {
-    margin: 20px; /* Espacement extérieur */
-    padding: 20px; /* Espacement intérieur */
-    border: 1px solid #ffffff; /* Bordure d'1px, de couleur gris clair */
-  }
-  
-  /* Footer */
-  
-  /* Styles pour le pied de page "footer" */
-  footer {
-    background-color: #ffffff; /* Couleur de fond */
-    color: black; /* Couleur du texte */
-    text-align: center; /* Alignement du texte au centre */
-    padding: 1em; /* Espacement intérieur */
-  }
-  
-  .skill {
-    margin: 20px 0;
+ body,
+ header {
+  font-family: Arial, sans-serif;                                                /*Utilise la police Arial, et si elle n'est pas disponible,utilise n'importe quelle police sans-serif.*/ 
+  color: #ffffff;                                                              /*Définit la couleur du texte en blanc.*/
+  background: linear-gradient(to bottom, #363636, #251c29);                  /*Utilise un dégradé linéaire du haut (#363636, une nuance de gris) vers le bas (#251c29, une nuance de violet).*/
+  background-repeat: no-repeat;                                                  /*Le fond ne doit pas se répéter.*/
+  background-attachment: fixed;                                                  /*Le fond reste fixe lors du défilement.*/
 }
 
-/*.skill p {
-    font-weight: bold;
-}*/
+header {
+  text-align: center;                                                            /*Centre le texte dans le header.*/
+  padding: 1em;                                                                  /*Espacement intérieur de 1em autour du contenu du header.*/
+}
+
+#container {
+  display: flex;                                                                 /*Utilise un layout flexible pour organiser les éléments à l'intérieur.*/
+  flex-direction: column;                                                        /*Organise les éléments à la verticale.*/
+  align-items: center;                                                           /*Centre les éléments à l'horizontale.*/
+  text-align: center;                                                            /*Centre le texte à l'intérieur des éléments du container.*/
+}
+
+section {
+  margin: 20px;                                                                  /*Espacement extérieur de 20px autour de chaque section.*/
+  padding: 20px;                                                                 /*Espacement intérieur de 20px.*/
+  border: 3px solid #ffffff;                                                   /*Bordure solide blanche de 3px.*/
+}
 
 .barDeProgression {
-    width: 100%;
-    background-color: #f3f3f3;
-    border-radius: 5px;
+  width: 25%;                                                                    /*La barre de progression prend 25% de la largeur du parent.*/
+  background-color: #f3f3f3;                                                   /*Fond en gris clair.*/
+  border-radius: 5px;                                                            /*Coins arrondis de 5px.*/
 }
 
 .progression {
-    height: 10px;
-    background-color: #8400ff;
-    border-radius: 5px;
-    text-align: center;
-    line-height: 30px;
-    color: white;
-    font-weight: bold;
+  height: 10px;                                                                  /*Hauteur de la barre à 10px.*/
+  background-color: #8400ff;                                                   /*Fond violet.*/
+  border-radius: 5px;                                                            /*Coins arrondis de 5px.*/
+  text-align: center;                                                            /*Centre le texte.*/ 
+  line-height: 30px;                                                             /*Hauteur de ligne à 30px, centrera verticalement le texte.*/
+  color: white;                                                                /*Couleur du texte en blanc.*/
+  font-weight: bold;                                                             /*Texte en gras.*/
+}
+
+.btn {
+  display: inline-block;                                                         /*Les éléments avec cette classe sont affichés comme des blocs en ligne. Cela signifie qu'ils sont alignés les uns à côté des autres, mais on peut leur appliquer des styles de bloc comme la marge et le rembourrage.*/
+  padding: 10px 20px;                                                            /*Le rembourrage (espace intérieur) de 10px en haut et en bas, et de 20px à gauche et à droite.*/
+  font-size: 1em;                                                                /*Taille de la police fixée à 1em, ce qui signifie qu'elle sera de la même taille que la police parente.*/
+  border: none;                                                                  /*Pas de bordure, tout simplement. C'est clean, quoi.*/
+  border-radius: 5px;                                                            /*Des coins arrondis de 5px pour un look plus doux et moderne.*/
+  background-color: #ffffffc5;                                                 /*Fond blanc pour le bouton, même si le commentaire dit "Couleur de fond bleue" (petite erreur de commentaire, je pense).*/
+  font-weight: 700;                                                              /*Moddifie le texte en gras (100 a 900)*/
+  color: rgb(0, 75, 71);                                                       /*La couleur du texte est un gris très foncé, pas du blanc comme indiqué dans le commentaire.*/
+  text-decoration: none;                                                         /*Supprime tout soulignement du texte. Encore une fois, ça fait plus propre.*/
+  cursor: pointer;                                                               /*Quand tu passes ta souris dessus, le curseur se transforme en main pour indiquer que c'est cliquable.*/
+  transition: background-color 0.3s ease;                                        /*Fait une petite animation douce de la couleur de fond en 0,3 secondes quand tu passes la souris dessus.*/
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);                                 /*Ajoute une ombre subtile sous le bouton. L'ombre est décalée de 3px en bas à droite et a un flou de 10px.*/
+}
+
+.btn:hover {
+  background-color: #00ff95;                                                   /*Change la couleur de fond en vert fluo quand tu passes la souris sur le bouton. C'est pour donner un petit effet interactif.*/
+  transform: translateY(-3px);                                                   /*Ce truc est génial ! Le bouton se déplace légèrement vers le haut (-3px) lorsque tu passes la souris dessus. C'est comme si le bouton se levait pour te dire "Clique sur moi !".*/
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);                                 /*L'ombre devient un peu plus grande et plus foncée lors du survol. Cela renforce l'effet de "levage" du bouton.
+
+  */
+}
+
+footer {
+  background-color: #ffffff;                                                   /*Le fond du pied de page est blanc. Simple et efficace.*/
+  color: black;                                                                /*La couleur du texte dans le pied de page est noire, donc facile à lire sur un fond blanc.*/
+  text-align: center;                                                            /*Tout le texte dans le pied de page sera centré. Ça donne un look plus organisé.*/
+  padding: 3em;                                                                  /*Espacement intérieur de 3em. Cela donne de la respiration au contenu du pied de page, le rendant moins écrasé.*/
+}
+
+#ColoreTitle,h1,h2,h3,h4 {
+  color: rgb(255, 196, 0);                                                     /*La couleur du texte dans le pied de page est noire, donc facile à lire sur un fond blanc.*/
+  font-weight: 700;                                                              /*Moddifie le texte en gras (100 a 900)*/
 }
