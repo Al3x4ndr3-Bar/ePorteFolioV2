@@ -12,7 +12,7 @@ header {
   padding: 1em;                                                                  /*Espacement intérieur de 1em autour du contenu du header.*/
 }
 
-#container {
+#container { /*fait appel a un ID*/
   display: flex;                                                                 /*Utilise un layout flexible pour organiser les éléments à l'intérieur.*/
   flex-direction: column;                                                        /*Organise les éléments à la verticale.*/
   align-items: center;                                                           /*Centre les éléments à l'horizontale.*/
@@ -71,7 +71,7 @@ footer {
   padding: 3em;                                                                  /*Espacement intérieur de 3em. Cela donne de la respiration au contenu du pied de page, le rendant moins écrasé.*/
 }
 
-#ColoreTitle,h1,h2,h3,h4 {
+h1,h2,h3,h4 {
   color: rgb(255, 196, 0);                                                     /*La couleur du texte dans le pied de page est noire, donc facile à lire sur un fond blanc.*/
   font-weight: 700;                                                              /*Moddifie le texte en gras (100 a 900)*/
 }
